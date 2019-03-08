@@ -1,0 +1,22 @@
+.profile-container, .global-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 5rem 2rem;
+    min-height: calc(100vh - 10rem);
+}
+
+.profile-container__post, .global-container__card {
+    padding: 1.5rem;
+    color: #05321d;
+    border: 1px solid #9fdcc4;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.profile-container__post--date {
+    font-size: 12px;
+}
+
+.profile-container__post--content {
+    font-size: 18px;
+}

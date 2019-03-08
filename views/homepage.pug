@@ -1,0 +1,25 @@
+extends layout/@layout
+
+block content
+    if !user
+        div.login-box
+            span You can&nbsp;
+            a(href="/sign-in")="sign in"
+            span &nbsp;if you have an account or you can&nbsp;
+            a(href="/sign-up")="sign up."
+    else
+        div.w-100.main-container
+            form(action="/add-post", method="post")
+                textarea.homepage-post-textarea(placeholder="What is on your mind?" name="postContent")
+                input.d-block.mx-auto.btn.btn-dark-green.mt-2(type="submit", value="Add post")
+            div.global-container
+                h3="Your feed"
+                if posts.length
+                each post in posts
+                    div.global-container__card.mt-2
+                        a(href=`/profile?${post.userId}`)
+                            h3=post.userNick
+                        div.profile-container__post--date=new Date(post.date).toLocaleDateString("en-EN")
+                        div.profile-container__post--content=post.content
+                else
+                        div="This place is so empty right now. You need to follow someone to fill this place with his posts."

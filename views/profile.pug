@@ -1,0 +1,12 @@
+extends layout/@layout
+
+block content
+    div.profile-container.w-100
+        if user
+            h1.my-1=user.nick
+            if posts.length
+                h3.my-1="Posts"
+            each post in posts
+                div.profile-container__post
+                    div.profile-container__post--date=new Date(post.date).toLocaleDateString("en-EN")
+                    div.profile-container__post--content=post.content

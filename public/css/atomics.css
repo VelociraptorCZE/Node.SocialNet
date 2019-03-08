@@ -1,0 +1,57 @@
+.align-self-center {
+    align-self: center !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.my-1 {
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.ml-1 {
+    margin-left: .5rem;
+}
+
+.m-auto {
+    margin: auto !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}

@@ -1,0 +1,17 @@
+.btn {
+    padding: .5rem;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+
+.btn-dark-green {
+    background: #05321d;
+    color: #fff;
+}
+
+.btn-white {
+    color: #05321d;
+    background: #fff;
+}

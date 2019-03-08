@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Signika;
+    src: url(../fonts/Signika-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Signika, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.main-nav {
+    background: linear-gradient(267deg, #005a23, #146d44);
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+.main-nav__item {
+    color: #fff;
+    display: block;
+    padding: 1rem;
+}
+
+.main-nav__item--logo {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-container {
+    padding-top: 80px;
+}
+
+.input-text {
+    padding: .5rem;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.input-text::placeholder {
+    color: #d7d7d7;
+}

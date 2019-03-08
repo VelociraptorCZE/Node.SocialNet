@@ -1,0 +1,13 @@
+.homepage-post-textarea {
+    resize: none;
+    min-height: 80px;
+    border-radius: 5px;
+    padding: .4rem;
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+.homepage-post-submit:hover {
+    opacity: .8;
+}

@@ -1,0 +1,12 @@
+extends layout/@layout
+
+block content
+    div.global-container.w-100
+        h2.mt-2=`Results for ${_query}`
+        each query in queries
+            - const isFollowed = followList.includes(query.id)
+            div.global-container__card
+                a(href=`profile?${query.id}`)=query.nick
+                if query.id !== user.id
+                    - const url = `/follow?${query.id}&${isFollowed ? "remove" : "add"}`
+                    a.js-manage-follow.ml-1.text-decoration-none.btn.btn-dark-green(href=url)=isFollowed ? "Unfollow" : "Follow"

@@ -1,0 +1,11 @@
+extends layout/@layout
+
+block content
+    div.login-box
+        h3.login-box__title="Log into an existing account"
+        form#signup-form(action="/log-to-account", method="post")
+            input.login-box__input(name="nick", type="text", placeholder="Nickname")
+            input.login-box__input(name="password", type="password", placeholder="Password")
+            input.login-box__submit(type="submit", value="Sign in")
+        if flash
+            div(class=`flash--${flash.class}`)=flash.content

@@ -1,0 +1,41 @@
+.login-box a {
+    color: #fff;
+}
+
+.login-box {
+    margin: auto;
+    align-self: center;
+    background: linear-gradient(197deg, #005a28, #05321d);
+    width: 65%;
+    padding: 2rem;
+    color: #fff;
+}
+
+.login-box__input, .login-box__submit {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.login-box__input {
+    padding: .6rem;
+    width: 50%;
+    margin: 1rem 0;
+    color: #fff;
+    min-width: 200px;
+    background: transparent;
+    border-color: #fff;
+}
+
+.login-box__submit {
+    background: #fff;
+    color: #05321d;
+    padding: .6rem;
+    cursor: pointer;
+    transition: background 1s;
+    font-weight: 700;
+}
+
+.login-box__submit:hover {
+    background: rgba(255, 255, 255, .8);
+}

@@ -1,0 +1,1 @@
+module.exports = (followList = []) => followList.split(",").map(id => Number(id));

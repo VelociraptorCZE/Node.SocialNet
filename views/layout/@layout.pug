@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title="Node.SocialNet"
+        link(rel="stylesheet", href="css/app.css")
+        script(async, defer, src="js/app.js")
+    body
+        if homepageFlash
+            div.position-absolute.mt-52px.w-100#dismissable-flash(class=`flash--${homepageFlash.class}`)=homepageFlash.content
+        nav.main-nav
+            a.main-nav__item.main-nav__item--logo(href="/")
+                img(src="img/logo.svg", alt="Node.SocialNet", height="32")
+            if user && user.logged
+                a.main-nav__item(href=`/profile?${user.id}`)=user.loggedAs || user.nick
+                form#js-find-form.align-self-center.d-flex
+                    input.input-text(type="text", placeholder="Search for something...", id="js-find-input")
+                    input.btn.btn-white.ml-1(type="submit", value="Find")
+                a.main-nav__item.ml-auto(href="/log-out")="Log out"
+            else
+                a.main-nav__item(href="/sign-in")="Sign in"
+    block content
